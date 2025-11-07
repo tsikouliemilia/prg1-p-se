@@ -14,9 +14,13 @@ while run:
             print(thing)
             print(f"öppnar påsen* {bag}")
     elif choice.lower() == "s":
-           bag.appeng(input ("skriv vad du vill spara:"))
+           bag.append(input ("skriv vad du vill spara:"))
     elif choice.lower() == "q":
             run = False
+    elif choice.lower () == "f":
+        query = input ("vad vill du söka efter:")
+        if query.lowe()in bag:
+             print(f"hittade {query} i påsen")
     else:
            print("Felaktigt komando, försök igen.")
 
